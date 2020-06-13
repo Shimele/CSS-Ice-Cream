@@ -1,8 +1,11 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 main{
     background: #FEF2A8;
     display: flex;
-    padding-left: 380px;
+    padding-left: 350px;
     
 
 }
@@ -16,53 +19,124 @@ main{
     position: absolute;
 
     }
+.stick{
+    height: 200px;
+    width:50px;
+    border: 1px solid #9E9E9E;
+    border-radius: 20px;
+    border-top: #fff;
+    margin-top: 380px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    margin-right: 100px;
+    position: relative;
+    box-shadow: 0 2px 2px rgb(147,147,147);
+    }
+.first{
+    background: linear-gradient(to right, #F582D7, #EFC0D5 30%, #CD357B 70%) ;
+    border-radius: 2em 2em .5em .5em;
+    margin-left: 20px;
+}
+.first-stick{
+    background: #edc894;
+    margin-left: 80px;
+    
+}
+.second{
+    background: linear-gradient(to right, #7D5860,  #9A8393 30%, #55263B 70%) ;
+    display: inline-block;
+    margin-left: 300px
+}
+.second-stick{
+    background: repeating-linear-gradient(
+    45deg,
+    #CC9C75,
+    #CC9C75 10px,
+    rgb(216, 104, 13) 10px,
+    rgb(216, 104, 13) 20px
+    );
+    margin-left: 130px
+}
+.third{
+    background: linear-gradient(to right, #A25F37, #D5CABE 30%, #84230D 70%) ;
+    border-radius: 2em 2em .5em .5em;
+    margin-left: 580px
+}
+.third-stick{
+    background: rgb(226, 197, 135);
+    margin-left: 130px
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        padding-left: 10px;
+    }
+    .cone{
+        height: 130px;
+        width:80px;
+        border: 1px solid #cccccc;
+    }
     .stick{
+        height: 130px;
+        min-width:25px;
+        margin-top: 210px;
+    }
+    .first{
+        margin-left: 3px;
+    }
+    .first-stick{
+        margin-left: 30px;
+    }
+    .second{
+        margin-left: 135px
+    }
+    .second-stick{
+        margin-left: 5px
+    }
+    .third{
+        margin-left: 275px
+    }
+    .third-stick{
+        margin-left: 16px
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 568px) and (max-width: 768px){
+    main{
+        margin: 0;
+        padding: 0px;
+    }
+    .cone{
         height: 200px;
-        width:50px;
-        border: 1px solid #9E9E9E;
-        border-radius: 20px;
-        border-top: #fff;
-        margin-top: 380px;
-        border-top-right-radius: 2px;
-        border-top-left-radius: 2px;
-        margin-right: 100px;
-        position: relative;
-        }
-        .first{
-            background: linear-gradient(to right, #F582D7, #EFC0D5 30%, #CD357B 70%) ;
-            border-radius: 2em 2em .5em .5em;
-            margin-left: 20px
-        
-        }
-        .first-stick{
-            background: #edc894;
-            margin-left: 80px;
-            
-        }
-        .second{
-            background: linear-gradient(to right, #7D5860,  #9A8393 30%, #55263B 70%) ;
-            display: inline-block;
-            margin-left: 300px
-        }
-        .second-stick{
-            background: repeating-linear-gradient(
-            45deg,
-            #CC9C75,
-            #CC9C75 10px,
-            rgb(216, 104, 13) 10px,
-            rgb(216, 104, 13) 20px
-          );
-          margin-left: 130px
-        }
-        .third{
-            background: linear-gradient(to right, #A25F37, #D5CABE 30%, #84230D 70%) ;
-            border-radius: 2em 2em .5em .5em;
-            margin-left: 580px
-        }
-        .third-stick{
-            background: rgb(226, 197, 135);
-            margin-left: 130px
-        }
+        width:130px;
+        border: 1px solid #cccccc;
+    }
+    .stick{
+        height: 130px;
+        max-width:45px;
+        margin-top: 278px;
+    }
+    .first{
+        margin-left: 110px;
+    }
+    .first-stick{
+        margin-left:155px;
+    }
+    .second{
+        margin-left: 350px
+    }
+    .second-stick{
+        margin-left:92px
+    }
+    .third{
+        margin-left: 550px
+    }
+    .third-stick{
+        margin-left: 53px
+    }
+}
 
 
-        
+
